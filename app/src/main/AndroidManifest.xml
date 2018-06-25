@@ -23,15 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- Include the AdActivity configChanges and theme. -->
-        <activity
-            android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:theme="@android:style/Theme.Translucent" />
-        <!--<activity-->
-            <!--android:name=".paid.Main2Activity"-->
-            <!--android:label="@string/title_activity_main2"-->
-            <!--android:theme="@style/AppTheme.NoActionBar"></activity>-->
+
     </application>
 
 </manifest>

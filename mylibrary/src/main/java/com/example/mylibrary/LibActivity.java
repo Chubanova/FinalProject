@@ -7,12 +7,16 @@ import android.widget.TextView;
 public class LibActivity extends AppCompatActivity {
     TextView mJokeTextView;
 
+    public static final String EXTRA_KEY_JOKE = "joke";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lib);
         mJokeTextView = findViewById(R.id.joke);
-        mJokeTextView.setText(getIntent().getExtras().getString("JOKE"));
+        if (getIntent().getExtras() != null) {
+            mJokeTextView.setText(getIntent().getExtras().getString(EXTRA_KEY_JOKE));
+        }
 
     }
 }

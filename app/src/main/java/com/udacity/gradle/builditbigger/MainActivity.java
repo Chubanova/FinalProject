@@ -1,6 +1,7 @@
 package com.udacity.gradle.builditbigger;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -48,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void tellJoke(View view) {
 
-        MyClass myClass = new MyClass();
-        String joke = myClass.getJoke();
+//        MyClass myClass = new MyClass();
+//        String joke = myClass.getJoke();
 
-        new EndpointsAsyncTask().execute(new Pair<Context, String>(this, joke));
+        new EndpointsAsyncTask().execute(new Pair<Context, String>(this, ""));
 //
     }
     @Nullable
